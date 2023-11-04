@@ -1,0 +1,128 @@
+.box {
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.nav_box_first {
+  text-align: left;
+}
+
+.nav_box_first img {
+  width: 20%;
+  background-color: blueviolet;
+}
+
+.nav_box_second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav_box_second p {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav_box_second > p:hover {
+  border-bottom: 1px solid black;
+}
+
+.poster {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  background-color: blueviolet;
+}
+
+.poster_box_first {
+  width: 40%;
+  text-align: left;
+  padding: 5px;
+}
+
+.poster_box_second {
+  width: 60%;
+  padding: 5px;
+  background-color: blueviolet;
+}
+.poster_box_first > h1 {
+  font-size: 44px;
+  color: #ffffff;
+}
+.poster_box_first > button {
+  border: none;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #007aff;
+  padding: 10px 33px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.poster_box_first > button:hover {
+  background-color: #0877ee;
+}
+.poster_box_second img {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.container_box_mine,
+.container_box_sustain,
+.container_box_mineral,
+.container_box_oil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 5px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.container_box_title {
+  width: 50%;
+  text-align: left;
+}
+.container_box_title > h1 {
+  color: #ff3a2d;
+  font-size: 43px;
+  font-family: sans-serif;
+}
+.container_box_title > p {
+  color: #000000;
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.container_box_title > button {
+  color: #ffffff;
+  font-size: 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ff3a2d;
+  padding: 12px 24px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.container_box_image {
+  width: 50%;
+}
+.container_box_image img {
+  width: 100%;
+}
