@@ -1,26 +1,79 @@
+import { useEffect, useState } from "react";
 import style from "../Style/ntwist.module.css";
+import { FaTwitter, FaInvision } from "react-icons/fa";
+import { BsCaretDownFill } from "react-icons/bs";
 
 function Ntwist() {
+  const [navBgColor, setNavBgColor] = useState("transparent");
+  const [navColor, setNavColor] = useState("white");
+  const [imageBgColor, setImageBgColor] = useState("transparent");
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setNavBgColor("white");
+      setNavColor("black");
+      setImageBgColor("black");
+    } else {
+      setNavBgColor("transparent");
+      setNavColor("white");
+      setImageBgColor("transparent");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className={style.box}>
+      {/* class main contain big poster image which have position relative with class navbar and class poster */}
+      <div className={style.main}>
+        <img
+          src="https://img.freepik.com/free-photo/sunshine-clouds-sky-during-morning-background-blue-white-pastel-heaven-soft-focus-lens-flare-sunlight-abstract-blurred-cyan-gradient-peaceful-nature-open-view-out-windows-beautiful-summer-spring_1253-1092.jpg?size=626&ext=jpg&ga=GA1.1.1056998353.1659457435&semt=ais"
+          alt="main"
+        />
+      </div>
       {/* navbar for home page which contain website logo and pages link*/}
-      <div className={style.navbar}>
+      <div
+        className={style.navbar}
+        style={{ backgroundColor: navBgColor, color: navColor }}
+      >
         {/* navbar image logo */}
         <div className={style.nav_box_first}>
           <img
-            src="https://ntwist.com/wp-content/uploads/2021/12/ntwistlight.png"
+            src={
+              imageBgColor == "black"
+                ? "https://ntwist.com/wp-content/uploads/2021/12/ntwist-logo-dark.png"
+                : "https://ntwist.com/wp-content/uploads/2021/12/ntwistlight.png"
+            }
             alt="logo"
           />
         </div>
         {/* navbar page link */}
         <div className={style.nav_box_second}>
           <p>Home</p>
-          <p>Industries</p>
+          <p className={style.popup}>
+            Industries{" "}
+            <span>
+              <BsCaretDownFill />
+            </span>
+          </p>
+          {/* box hover for Industries */}
+          <div className={style.boxhover}>
+            <p>Sustainability</p>
+            <p>Mineral Processing</p>
+            <p>Mine-To-Mill-To-Mine Optimization</p>
+            <p>Oil & Gas</p>
+          </div>
           <p>AI Software</p>
           <p>Blog</p>
           <p>Contact Us</p>
         </div>
       </div>
+
       {/* poster image content with box, headings and image*/}
       <div className={style.poster}>
         {/*below box contain poster title and button  */}
@@ -35,6 +88,17 @@ function Ntwist() {
             alt="poster-small-img"
           />
         </div>
+      </div>
+      {/* left side box which contain country flag's and name's at fixed position */}
+      <div className={style.countrybox}>
+        <img
+          src="https://ntwist.com/wp-content/plugins/gtranslate/flags/svg/en.svg"
+          alt="country"
+        />
+        <h3>EN</h3>
+        <h3>
+          <BsCaretDownFill />
+        </h3>
       </div>
       {/* container for boxes which contain image, title, paragraph and button */}
       <div className={style.container}>
@@ -132,7 +196,27 @@ function Ntwist() {
       </div>
       {/* footer which contain information about country, pages link and copyright */}
       <div className={style.footer}>
-
+        <img
+          src="https://ntwist.com/wp-content/uploads/2021/12/ntwistlight.png"
+          alt="footer-img"
+        />
+        <div className={style.footer_pages}>
+          <h6>Home</h6>
+          <h6>About Us</h6>
+          <h6>Contact Us</h6>
+          <h6>Privacy Policy</h6>
+          <h6>Sitemap</h6>
+        </div>
+        <p>9650 20 Ave NW, Edmonton, AB, T6N 1G1, Canada</p>
+        <div className={style.footer_pages} style={{ marginTop: "-20px" }}>
+          <h6>
+            <FaTwitter />
+          </h6>
+          <h6>
+            <FaInvision />
+          </h6>
+        </div>
+        <p>© 2022. Ntwist Inc.</p>
       </div>
     </div>
   );
