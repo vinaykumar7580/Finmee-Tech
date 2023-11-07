@@ -100,6 +100,19 @@ span {
   padding: 5px;
 }
 
+.poster_box_first_heading{
+  animation: headmove 1s ease-in-out;
+}
+
+@keyframes headmove {
+  0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .poster_box_second {
   width: 55%;
   padding: 5px;
@@ -116,6 +129,7 @@ span {
   padding: 10px 33px;
   cursor: pointer;
   border-radius: 3px;
+  margin-left: 1px;
 }
 
 .poster_box_first > button:hover {
@@ -167,6 +181,33 @@ span {
   padding: 5px;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+.container_box_mine{
+  animation: minemove 4s ease-in-out;
+
+}
+.container_box_sustain{
+  animation: minemove 6s ease-in-out;
+
+}
+
+.container_box_mineral{
+  animation: minemove 8s ease-in-out;
+
+}
+.container_box_oil{
+  animation: minemove 10s ease-in-out;
+
+}
+
+@keyframes minemove {
+  0% {
+        transform: translateY(150px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .container_box_title {

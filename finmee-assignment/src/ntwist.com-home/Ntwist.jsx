@@ -81,7 +81,7 @@ function Ntwist() {
         {/*below box contain poster title and button  */}
         <div className={style.poster_box_first}>
           
-            <h1>Data-powered solutions for Industrial Excellence</h1>
+            <h1 className={style.poster_box_first_heading}>Data-powered solutions for Industrial Excellence</h1>
           
           <button>Read More</button>
         </div>
