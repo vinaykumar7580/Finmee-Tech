@@ -9,6 +9,7 @@ function Ntwist() {
   const [navColor, setNavColor] = useState("white");
   const [imageBgColor, setImageBgColor] = useState("transparent");
 
+  // handleScroll function for handling scrolling and change navbar text color and background
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setNavBgColor("white");
@@ -109,7 +110,9 @@ function Ntwist() {
         <Slide bottom>
           <div className={style.container_box_mine}>
             <div className={style.container_box_title}>
+              {/* heading of box */}
               <h1>Mine-To-Mill-To-Mine Optimization</h1>
+              {/* paragraph of box */}
               <p>
                 NTWIST’s newest product unlocks up to $250/oz in previously
                 inaccessible value in open pit gold mines by connecting siloed
@@ -123,6 +126,7 @@ function Ntwist() {
               <button>Read More</button>
             </div>
             <div className={style.container_box_image}>
+              {/* image of box */}
               <img
                 src="https://ntwist.com/wp-content/uploads/2023/01/iStock-1339284457-2048x1365.jpg"
                 alt="mine"

@@ -1,38 +1,316 @@
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:10px 0px;
-    padding-left:6px;
-    padding-right: 50px;
-    background-color: black;
-    color: #FFFFFF;
+.body {
+  background-color: black;
 }
-.navbar_left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:30px;
 
+/* navbar box properties */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20%;
+  padding: 5px 30px;
+  padding-right: 50px;
+  background-color: black;
+  color: #ffffff;
 }
-.navbar_left_box_pages p{
-    font-size: 16px;
-    font-family:sans-serif;
-    cursor: pointer;
+
+/* navbar left box properties */
+.navbar_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
-.navbar_left_box_pages{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap:20px;
 
-
+/* para properties of navbar left box */
+.navbar_left_box_pages p {
+  font-size: 16px;
+  font-family: sans-serif;
+  cursor: pointer;
 }
-.navbar_right{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap:30px;
 
+/* the box which contain pages content */
+.navbar_left_box_pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar_left_box_pages_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* navbar right side box */
+.navbar_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+/* navbar right side search box  */
+.navbar_right_search {
+  height: 35px;
+  border: 1px solid #697795;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  padding: 0px 10px;
+  border-radius: 7px;
+  background-color: #30373b;
+}
+.navbar_right_search_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar_right_search_box_right {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #697795;
+  border-radius: 5px;
+  padding: 2px;
+  color: rgb(160, 170, 181);
+}
+
+/* sign in button property */
+.button_signin p {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+/* signup button property */
+.button_signup p {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: sans-serif;
+  padding: 8px 10px;
+  border-radius: 7px;
+}
+
+/* main box which shows two boxes */
+.main {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: top;
+  align-items: top;
+}
+
+/* left side box inside class main */
+.main_poster_box {
+  width: 60%;
+  position: relative;
+}
+
+/* poster image in left side box inside class main */
+.main_poster_box img {
+  width: 100%;
+}
+
+/* right side box of class main */
+.main_image_box {
+  width: 40%;
+ 
+}
+
+/* image of right side box of class main */
+.main_image_box img {
+  width: 100%;
+  height: 100%;
+}
+
+.connect_line {
+  width: 437px;
+  height: 637px;
+  position: absolute;
+  top: 95px;
+  left: 200px;
+}
+
+.line_arrow {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 740px;
+  left: 195px;
+}
+.line_arrow svg {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(102, 112, 222);
+  color: white;
+  padding: 5px;
+}
+
+.plain_line_middle {
+  height: 350px;
+  width: 3px;
+  background: linear-gradient(
+    #d2a8ff,
+    #a371f7 10%,
+    #196c2e 70%,
+    #2ea043 80%,
+    #56d364
+  );
+  position: absolute;
+  top: 785px;
+  left: 211px;
+}
+
+.planet {
+  height: 250px;
+  width: 320px;
+  position: absolute;
+  top: 140px;
+  right: 200px;
+}
+.section {
+  height: 500px;
+  background-color: black;
+}
+
+/* class container properties */
+.container {
+  width: 70%;
+  height: 700px;
+  color: #ffffff;
+  padding: 10px;
+  position: absolute;
+  top: 480px;
+  left: 250px;
+}
+.container_box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+/* circle box which shows football image and text */
+.container_circle {
+  border: 1px solid rgb(69, 65, 65);
+  text-align: left;
+  margin: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 0px 10px;
+  border-radius: 50px;
+  background-color: black;
+  cursor: pointer;
+}
+
+/* select first div in container circle class */
+.container_circle div:first-child {
+  width: 10%;
+}
+.container_circle img {
+  width: 100%;
+}
+.container_circle h5 {
+  font-size: 18px;
+  margin-top: -0px;
+  padding-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container_circle p {
+  color: #6e7681;
+  margin-top: -30px;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.heading {
+  text-align: left;
+}
+
+.heading h1 {
+  font-size: 80px;
+  font-weight: 400;
+  font-family: "Mona Sans", "Mona Sans Header Fallback", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-feature-settings: unset;
+}
+.heading p {
+  color: #7d8590;
+  margin-top: -50px;
+  font-size: 32px;
+  font-family: "Mona Sans", "Mona Sans Header Fallback", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.input_box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+.input_box > div > input {
+  outline: none;
+
+  font-size: 16px;
+  padding: 10px 10px;
+  border: 2px solid blue;
+}
+
+.input_box > div > button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #6e40c9;
+  border: 1px solid #6e40c9;
+  font-weight: bold;
+  color: #ffffff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input_box > div > h4 {
+  border: 1px solid #6e40c9;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.input_box > div > h4:hover {
+  border: 1px solid #ffffff;
+}
+
+.container > p {
+  margin-top: 80px;
+  text-align: left;
+  color: #7d8590;
+}
+.container > p > span {
+  background-color: rgb(0, 183, 255);
+  padding: 0px 3px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.multi_images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.multi_images > div > img {
+  width: 100%;
 }
