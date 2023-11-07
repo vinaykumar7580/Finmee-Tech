@@ -25,3 +25,7 @@
 - **class multi_images**: this is last box in container class which shows multiple images in horizontally.
 - **class section**: class section added height and background color after main class box.
 
+## deployment
+
+- **deploy link**: https://ntwist-github-home.vercel.app
+

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import style from "../Style/ntwist.module.css";
 import { FaTwitter, FaInvision } from "react-icons/fa";
 import { BsCaretDownFill } from "react-icons/bs";
-import Slide from "react-reveal/Slide";
+
 
 function Ntwist() {
   const [navBgColor, setNavBgColor] = useState("transparent");
@@ -80,9 +80,9 @@ function Ntwist() {
       <div className={style.poster}>
         {/*below box contain poster title and button  */}
         <div className={style.poster_box_first}>
-          <Slide bottom>
+          
             <h1>Data-powered solutions for Industrial Excellence</h1>
-          </Slide>
+          
           <button>Read More</button>
         </div>
         {/* below box contain image inside poster */}
@@ -107,7 +107,7 @@ function Ntwist() {
       {/* container for boxes which contain image, title, paragraph and button */}
       <div className={style.container}>
         {/* first box showing information about mine optimization */}
-        <Slide bottom>
+      
           <div className={style.container_box_mine}>
             <div className={style.container_box_title}>
               {/* heading of box */}
@@ -133,9 +133,9 @@ function Ntwist() {
               />
             </div>
           </div>
-        </Slide>
+      
         {/* second box showing information about sustainability */}
-        <Slide bottom>
+        
           <div className={style.container_box_sustain}>
             <div className={style.container_box_image}>
               <img
@@ -160,9 +160,9 @@ function Ntwist() {
               <button>Read More</button>
             </div>
           </div>
-        </Slide>
+   
         {/* third box showing information about mineral processing */}
-        <Slide bottom>
+       
           <div className={style.container_box_mineral}>
             <div className={style.container_box_title}>
               <h1>Mineral Processing</h1>
@@ -181,9 +181,9 @@ function Ntwist() {
               />
             </div>
           </div>
-        </Slide>
+    
         {/* fourth box showing information about oil and gas */}
-        <Slide bottom>
+        
           <div className={style.container_box_oil}>
             <div className={style.container_box_image}>
               <img
@@ -207,7 +207,7 @@ function Ntwist() {
               <button>Read More</button>
             </div>
           </div>
-        </Slide>
+        
       </div>
       {/* footer which contain information about country, pages link and copyright */}
       <div className={style.footer}>
